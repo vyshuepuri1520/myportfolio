@@ -40,7 +40,6 @@ function App() {
           <Skills/>
           <Education/>
         </Wrapper>
-        Lets make portfolio
       </Body>
       </Router>
       </ThemeProvider>
