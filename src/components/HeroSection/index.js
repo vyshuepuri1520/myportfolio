@@ -4,6 +4,7 @@ import {Bio} from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../../images/Heroimage.jpg";
 import _default from "../../themes/default";
+import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroContainer = styled.div`
 background-color:${({theme}) => theme.card_light}
@@ -13,7 +14,7 @@ position:relative;
 padding:80px 30px;
 
 @media (max-width : 960px){
-  padding:66px 16px;
+  padding:66px 20px;
 }
 
 @media (max-width:640px){
@@ -28,16 +29,14 @@ const HeroBg = styled.div`
 position:absolute;
 display:flex;
 justify-content:end;
-top:0;
 right:0;
-bottom:0;
-left:0;
+bottom:50%;
 overflow:hidden;
-width:100%;
+width:85%;
 height:100%;
 max-width:1360px;
-top:50%;
-left:50%;
+top:60%;
+left:55%;
 padding : 0 30px;
 -webkit-transform : translateX(-50%) translateY(-50%);
 transform:translateX(-50%) translateY(-50%);
@@ -49,10 +48,8 @@ transform:translateX(-50%) translateY(-50%);
 `;
 
 const HeroInnerContainer = styled.div`
-// position: relative;
 display:flex;
 justify-content:center;
-// justify-content: space-between;
 align-items:center;
 width:100%;
 max-width:1100px;
@@ -63,7 +60,7 @@ max-width:1100px;
 `;
 
 const HeroLeftContainer = styled.div`
-width :100%;
+width :135%;
 order : 1;
 @media (max-width:960px){
   order:2;
@@ -165,7 +162,7 @@ const ResumeButton = styled.a`
 appearance: button;
 text-decoration: none;
 width: 95%;
-max-width: 300px;
+max-width: 200px;
 text-align: center;
 padding: 16px 0;
 color:${({ theme }) => theme.white};
@@ -216,7 +213,9 @@ const Hero = () => {
   return (
     <div id = "about">
       <HeroContainer>
-        <HeroBg></HeroBg>
+        <HeroBg>
+          <HeroBgAnimation/>
+        </HeroBg>
           <HeroInnerContainer>
             <HeroLeftContainer>
               <Title>Hi, I am <br/>{Bio.name}</Title>
@@ -231,7 +230,7 @@ const Hero = () => {
                 </Span>
               </TextLoop>
               <SubTitle>{Bio.description}</SubTitle>
-              <ResumeButton href = {Bio.resume} target = "_blank">Check Resume</ResumeButton>
+              <ResumeButton href = {Bio.resume} target = "_blank">Resume</ResumeButton>
             </HeroLeftContainer>
             <HeroRightContainer>
                   <Image src={HeroImg} alt = "Hero"/>
