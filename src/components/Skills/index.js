@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   justify-content:center;
   width:100%;
   gap:12px;
+  padding:10px 0px 100px 0;
 `;
 
 const Title = styled.h1`

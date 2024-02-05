@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Projectcard from '../Cards/Projectcard';
 import { projects } from '../../data/constants';
+
 const Container = styled.div`
   display:flex;
   flex-direction:column;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
   justify-content:center;
   width:100%;
   gap:12px;
+  padding:10px 0px 40px 0;
 `;
 
 const Title = styled.h1`

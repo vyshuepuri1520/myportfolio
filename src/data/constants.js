@@ -1,3 +1,11 @@
+import todo from "../project_images/todo1.png";
+import textutils from "../project_images/textUtils.png";
+import restaurant from "../project_images/Screenshot 2024-02-04 161909.png";
+import newsapp from "../project_images/Screenshot 2024-02-04 162240.png";
+import btech from "../project_images/rgit-logo.jpg";
+import vasavi from "../project_images/vasavi.png";
+import trinity from "../project_images/APBSE.webp";
+
 export const Bio = {
   name: "Epuri Sai Vyshnavi",
   roles: [
@@ -105,30 +113,30 @@ export const skills = [
 export const education = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/C560BAQE4UC9Z_k3c7A/company-logo_200_200/0/1579422507409?e=1692230400&v=beta&t=HJssPsrwwkAJAsvFiVIYPdM8GzUuuSK5YlATKgLx3Bc",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
-    grade: "8.71 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    img: btech,
+    school: "Rajeev Gandhi Memorial College of Engineering and Technology, Nandyal",
+    date: "Sep 2020 - May 2024",
+    grade: "8.79 CGPA",
+    desc: "I am currently pursuing a Bachelor's degree in Electronics and Communication Engineering at Rajeev Gandhi Memorial College of Engineering and Technology, Nandyal. I have completed 7 semesters and have a CGPA of 8.79. I have taken courses in Front End Technology from Herovired Company and programming languages. I am also a member of the IEEE in the RGMCET student Branch holding the position of the Treasurer.",
+    degree: "Bachelor of Technology - BTech, Electronics and Communication Engineering",
   },
   {
     id: 1,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2019 - Apr 2025",
-    grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    img: vasavi,
+    school: "Vasavi Junior College, Kurnool",
+    date: "July 2018 - Apr 2020",
+    grade: "9.86 CGPA",
+    desc: "I completed my Intermediate at Vasavi Junior College, Kurnool, where I studied MPC.",
+    degree: "Intermediate, MPC",
   },
   {
     id: 2,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    img: trinity,
+    school: "Trinity High School, Kurnool",
+    date: "March 2018",
+    grade: "10 CGPA",
+    desc: "I completed my class 10 education at Trinity High School, Kurnool.",
+    degree: "SSC",
   },
 ];
 
@@ -139,8 +147,7 @@ export const projects = [
     date: "Aug 2023 - Sep 2023",
     description:
       "Developed the Flash Flavor restaurant website using HTML, CSS, and JavaScript. It's a user-friendly site with attractive design and interactive elements, showcasing my skills in web development.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    image:restaurant,
     tags: [" HTML", "CSS", "JavaScript"],
     category: "web app",
     github: "https://github.com/vyshuepuri1520/restaurant_final_website",
@@ -153,8 +160,7 @@ export const projects = [
     date: "Sep 2023 - Oct 2023",
     description:
       "Created the TextUtils React app that employs React Router for seamless navigation,leverages useState hooks for state management efficient development. It also offers a versatile platform for text manipulation and analysis",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    image:textutils,
     tags: [
       "React JS",
       "BootStrap",
@@ -169,7 +175,7 @@ export const projects = [
     date: "Oct 2023",
     description:
       "Developed a To-Do List application using ReactJS, demonstrating my proficiency in React. This user-friendly app allows efficient task creation, management, and organization, showcasing my skills in modern web development for enhanced productivity.",
-    image:"https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+    image:todo,
     tags: [ "React JS",
     "BootStrap"],
     category: "machine learning",
@@ -183,8 +189,7 @@ export const projects = [
     date: "Dec 2023 - Jan 2024",
     description:
       "NewsApp that covers various categories like sports, general news,technology, science, health, business, and entertainment. Users can easily check day-to-day updates in a user-friendly interface. It integrates API keys to fetch real-time news data.",
-    image:
-      "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
+    image:newsapp,
     tags: ["React JS",
     "BootStrap"],
     category: "android app",
