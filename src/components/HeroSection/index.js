@@ -7,11 +7,11 @@ import _default from "../../themes/default";
 import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroContainer = styled.div`
-background-color:${({theme}) => theme.card_light}
-display:flex;
-justify-content:center;
-position:relative;
-padding:80px 30px;
+background: ${({ theme }) => theme.card_light};
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 80px 30px;
 
 @media (max-width : 960px){
   padding:66px 20px;
@@ -20,6 +20,8 @@ padding:80px 30px;
 @media (max-width:640px){
   padding:32px 16px;
 }
+
+
 
 z-index:1;
 clip-path: polygon(0 0, 100% 0,100% 100%, 70% 95%,0 100%);
@@ -37,8 +39,8 @@ overflow:hidden;
 width:100%;
 height:100%;
 max-width:1360px;
-top:50%;
-left:50%;
+top:55%;
+left:53%;
 padding : 0 30px;
 -webkit-transform : translateX(-50%) translateY(-50%);
 transform:translateX(-50%) translateY(-50%);
@@ -46,6 +48,8 @@ transform:translateX(-50%) translateY(-50%);
 @media (max-width : 960px){
   justify-content:center;
   padding:0px 0px;
+  top:45%;
+left:50%;
 }
 `;
 

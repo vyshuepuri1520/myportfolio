@@ -61,6 +61,7 @@ max-width:400px;
 background-color:${({theme}) => theme.card};
 border:0.1px solid #854CE6;
 border-radius:16px;
+box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 padding:18px 36px;
 
 

@@ -18,6 +18,7 @@ const Nav = styled.div`
     justify-content: center;
     font-size: 1rem;
     position: sticky;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
     top: 0;
     z-index: 10;
     @media (max-width: 960px) {
@@ -33,6 +34,7 @@ const NavContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
+
 `;
 
 const NavLogo = styled(LinkR)`
@@ -178,7 +180,7 @@ const Navbar = () => {
     <Nav>
         <NavContainer>
             <NavLogo href = '/'>
-                <a href="#about"
+                <a 
                     style = {{
                         display:"flex",
                         alignItems: "center",
