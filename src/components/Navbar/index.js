@@ -177,8 +177,8 @@ const Navbar = () => {
   <>
     <Nav>
         <NavContainer>
-            <NavLogo to = '/'>
-                <a
+            <NavLogo href = '/'>
+                <a href="#about"
                     style = {{
                         display:"flex",
                         alignItems: "center",
