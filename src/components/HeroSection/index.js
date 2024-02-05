@@ -29,27 +29,30 @@ const HeroBg = styled.div`
 position:absolute;
 display:flex;
 justify-content:end;
+top:0;
+left:0;
 right:0;
-bottom:50%;
+bottom:0;
 overflow:hidden;
-width:85%;
+width:100%;
 height:100%;
 max-width:1360px;
-top:60%;
-left:55%;
+top:50%;
+left:50%;
 padding : 0 30px;
 -webkit-transform : translateX(-50%) translateY(-50%);
 transform:translateX(-50%) translateY(-50%);
 
 @media (max-width : 960px){
-  padding:0px 0px;
   justify-content:center;
+  padding:0px 0px;
 }
 `;
 
 const HeroInnerContainer = styled.div`
+position: relative;
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
 width:100%;
 max-width:1100px;
@@ -60,14 +63,14 @@ max-width:1100px;
 `;
 
 const HeroLeftContainer = styled.div`
-width :135%;
+width :100%;
 order : 1;
 @media (max-width:960px){
   order:2;
-  margin-bottom :32px;
+  margin-bottom :30px;
   display:flex;
-  align-items:center;
   flex-direction:column;
+  align-items:center;
 }
 
 @media (max-width:640px){
@@ -87,9 +90,9 @@ justify-content:end;
 gap:12px;
 @media (max-width:960px){
   order:1;
+  justify-content: center;
   margin-bottom :80px;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 @media (max-width:640px){
@@ -119,10 +122,10 @@ line-height : 68px;
 const TextLoop = styled.div`
   font-size:32px;
   font-weight:600;
+  display:flex;
   color : ${({theme}) => theme.text_primary};
   line-height:68px;
   gap:12px;
-  display:flex;
 
   @media (max-width:960px){
     text-align:center;
@@ -142,9 +145,9 @@ cursor:pointer;
 
 const SubTitle = styled.div`
 font-size:20px;
-color : ${({theme}) => theme.text_primary+95};
 line-height:32px;
 margin-bottom : 42px;
+color : ${({theme}) => theme.text_primary+95};
 @media (max-width:960px){
   text-align:center;
  
@@ -193,13 +196,14 @@ font-size: 18px;
 const Image = styled.img`
   width:100%;
   position:relative;
+  width:100%;
+  height:100%;
   border-radius:55%;
   max-width:350px;
   max-height:350px;
-  object-fit:cover;
-  object-position:center;
+  
   border:2px solid ${({theme}) => theme.primary};
-  @media (max-width:960px){
+  @media (max-width:768px){
     max-width:350px;
     max-height:350px;
   }
@@ -217,7 +221,7 @@ const Hero = () => {
           <HeroBgAnimation/>
         </HeroBg>
           <HeroInnerContainer>
-            <HeroLeftContainer>
+            <HeroLeftContainer id = "Left">
               <Title>Hi, I am <br/>{Bio.name}</Title>
               <TextLoop>I am a 
                 <Span>
@@ -232,7 +236,7 @@ const Hero = () => {
               <SubTitle>{Bio.description}</SubTitle>
               <ResumeButton href = {Bio.resume} target = "_blank">Resume</ResumeButton>
             </HeroLeftContainer>
-            <HeroRightContainer>
+            <HeroRightContainer id = "Right">
                   <Image src={HeroImg} alt = "Hero"/>
             </HeroRightContainer>
           </HeroInnerContainer>
