@@ -9,6 +9,7 @@ const Container = styled.div`
   justify-content:center;
   position:relative;
   z-index:1;
+  padding: 40px 0px 40px 0px;
   align-items:center;
 `;
 
@@ -57,9 +58,9 @@ gap:28px;
 
 const Projects = () => {
   return (
-    <Container id = "projects">
+    <Container id = "projects" >
         <Wrapper>
-        <Title> Projects</Title>
+        <Title > Projects</Title>
         <Desc>I have worked on various Projects. Here are some of my projects.</Desc>
         <CardContainer>
         {projects.map((project) => (

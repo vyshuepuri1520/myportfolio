@@ -122,10 +122,7 @@ box-shadow: 20px 20px 60px #1F2634,
   box-shadow: 20px 20px 60px #1F2634,
   filter: brightness(1);
   }
-@media (max-width: 640px) {
-padding: 12px 0; 
-font-size: 18px;
-}
+
 `;
 const Projectcard = ({ project }) => {
   return (
