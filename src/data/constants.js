@@ -16,7 +16,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. My excellent communication skills enhance collaboration within teams, while my eagerness to learn drives continuous improvement and  dedicated to delivering high-quality results. I am ready to make a meaningful contribution with a positive attitude and a growth mindset.",
   github: "https://github.com/vyshuepuri1520",
   resume:
-    "https://drive.google.com/file/d/1RJzdmXwWHmscXK_o4wGUYSJE5vLc_XMG/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1877JHRQ9zFVmtXzT2UcWahBFzTersDtA/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/epuri-sai-vyshnavi-47549522a",
   insta: "https://www.instagram.com/vyshu_15_19/",
 };
