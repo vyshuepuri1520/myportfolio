@@ -5,6 +5,7 @@ import newsapp from "../project_images/Screenshot 2024-02-04 162240.png";
 import btech from "../project_images/rgit-logo.jpg";
 import vasavi from "../project_images/vasavi.png";
 import trinity from "../project_images/APBSE.webp";
+import inotebook from "../project_images/inotebook.png";
 
 export const Bio = {
   name: "Epuri Sai Vyshnavi",
@@ -16,7 +17,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. My excellent communication skills enhance collaboration within teams, while my eagerness to learn drives continuous improvement and  dedicated to delivering high-quality results. I am ready to make a meaningful contribution with a positive attitude and a growth mindset.",
   github: "https://github.com/vyshuepuri1520",
   resume:
-    "https://drive.google.com/file/d/1877JHRQ9zFVmtXzT2UcWahBFzTersDtA/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1Whr0LDBmlcrOzpRkT2AKWBQxeZa2Efx9/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/epuri-sai-vyshnavi-47549522a",
   insta: "https://www.instagram.com/vyshu_15_19/",
 };
@@ -196,6 +197,20 @@ export const projects = [
     github: "https://github.com/vyshuepuri1520/newsapp",
     webapp: "",
   },
+  {
+    id: 4,
+    title: "iNoteBook",
+    date: "March 2024 - April 2024",
+    description:
+      "The iNotebook project is designed to function as a digital notebook application, allowing users to create, edit, and organize their notes securely. The data is stored in the backend server which maintains security as well. ",
+    image:inotebook,
+    tags: ["React JS","MongoDB",
+    "BootStrap"],
+    category: "android app",
+    github: "https://github.com/vyshuepuri1520/iNoteBook",
+    webapp: "",
+  },
+  
 
 
 ];
