@@ -117,7 +117,7 @@ export const education = [
     img: btech,
     school: "Rajeev Gandhi Memorial College of Engineering and Technology, Nandyal",
     date: "Sep 2020 - May 2024",
-    grade: "8.79 CGPA",
+    grade: "8.88 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Electronics and Communication Engineering at Rajeev Gandhi Memorial College of Engineering and Technology, Nandyal. I have completed 7 semesters and have a CGPA of 8.79. I have taken courses in Front End Technology from Herovired Company and programming languages. I am also a member of the IEEE in the RGMCET student Branch holding the position of the Treasurer.",
     degree: "Bachelor of Technology - BTech, Electronics and Communication Engineering",
   },
